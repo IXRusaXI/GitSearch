@@ -1,0 +1,130 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github-search {
+    padding: 20px 30px;
+
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: gray;
+}
+
+.search-form__input {
+    width: 450px;
+    box-sizing: border-box;
+}
+
+.github-search__results {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 100%;
+    box-sizing: border-box;
+
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.drop-down__item {
+    padding: 3px 5px;
+    height: 20px;
+    width: 450px;
+    box-sizing: border-box;
+
+    background-color: rgb(206, 206, 206);
+    border: 1px solid black;
+    border-radius: 3px;
+
+    display: flex;
+    align-items: center;
+
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.github-search__results :hover {
+    background-color: aqua;
+}
+
+.github-search__storage {
+    position: relative;
+    display: block;
+
+
+    margin-bottom: 20px;
+    top: 20px;
+
+    box-sizing: border-box;
+
+    background-color: green;
+}
+
+.saved-list__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    height: 80px;
+    width: 450px;
+    box-sizing: border-box;
+    background-color: purple;
+
+    border: 1px solid black;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.saved-list__left-column {
+    display: flex;
+    flex-direction: column;
+
+    justify-items: left;
+    padding: 12px;
+
+    overflow: hidden;
+}
+
+.saved-list__right-column {
+    display: flex;
+
+    justify-content: right;
+    align-items: center;
+}
+
+
+.saved-list__delete-button {
+    height: 70px;
+    width: 70px;
+
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 30%;
+
+    background-image: url('../img/close-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    transition: background-color 400ms ease-in-out;
+}
+
+.saved-list__delete-button:hover {
+    background-color: #570057;
+}
